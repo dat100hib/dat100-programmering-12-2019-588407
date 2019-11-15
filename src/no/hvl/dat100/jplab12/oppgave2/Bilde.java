@@ -6,33 +6,54 @@ public class Bilde extends Tekst {
 
 	// TODO - objekt variable
 	
+	String url;
+	
+	
 	public Bilde(int id, String bruker, String dato, String tekst, String url) {
-		throw new UnsupportedOperationException(TODO.constructor("Bilde"));
+		
+	super(id, bruker, dato, tekst);
+	
+		this.url = url;
+		//throw new UnsupportedOperationException(TODO.constructor("Bilde"));
 	}
 
 	public Bilde(int id, String bruker, String dato, int likes, String tekst, String url) {
-		throw new UnsupportedOperationException(TODO.constructor("Bilde"));
+		super(id, bruker, dato, likes, tekst);
+		this.url = url;
+		
+		//throw new UnsupportedOperationException(TODO.constructor("Bilde"));
 	}
 	
 	public String getUrl() {
-		throw new UnsupportedOperationException(TODO.method());
+	
+		return url;
+		//throw new UnsupportedOperationException(TODO.method());
 
 	}
 
 	public void setUrl(String url) {
-		throw new UnsupportedOperationException(TODO.method());
+		
+		this.url = url;
+		//throw new UnsupportedOperationException(TODO.method());
 	}
 
 	@Override
 	public String toString() {
-		throw new UnsupportedOperationException(TODO.method ());
-
+		//throw new UnsupportedOperationException(TODO.method ());
+String str;
+		
+		
+		// TODO - start
+		str = "<BILDE" + "\n"+ super.getId() +"\n" + super.getBruker() + "\n" + super.getDato() + "\n" + super.getLikes() +"\n"+ super.getTekst() +"\n"+ getUrl() +"\n";
+		//BILDE\n1\nOle Olsen\n23-10-2019\n0\net bilde\nhttp://www.picture.com/oo.jpg\n
+		return str;
+		
 	}
 
 	// Metoden nedenfor er kun for valgfri oppgave 6
 	public String toHTML() {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		//throw new UnsupportedOperationException(TODO.method());
 				
 	}
 }
